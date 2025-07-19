@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyCast - Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="theme-toggle">
+      <h2>SkyCast</h2>
+      <button id="themeBtn"><i class="fas fa-moon"></i></button>
+    </div>
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city...">
+      <button onclick="getWeatherByCity()">🔍</button>
+    </div>
+    <div class="weather">
+      <i id="weatherIcon" class="fas fa-cloud"></i>
+      <div class="temp" id="temperature">-- °C</div>
+      <div id="description">--</div>
+    </div>
+    <div class="details">
+      <p id="location">📍 --</p>
+      <p id="humidity">💧 Humidity: --%</p>
+      <p id="wind">💨 Wind: -- km/h</p>
+    </div>
+    <div class="forecast" id="forecast"></div>
+  </div>
+  <footer>
+    Made with ❤️ by Ishika · SkyCast Weather App · 2025
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

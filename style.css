@@ -1,0 +1,135 @@
+:root {
+  --bg-light: linear-gradient(to right top, #a1c4fd, #c2e9fb);
+  --bg-dark: linear-gradient(to right top, #141e30, #243b55);
+  --card-light: rgba(255, 255, 255, 0.2);
+  --card-dark: rgba(0, 0, 0, 0.4);
+  --text-light: #fff;
+  --text-dark: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--bg-light);
+  color: var(--text-dark);
+  transition: all 0.4s ease;
+}
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: var(--card-light);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+
+.theme-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.theme-toggle button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.search {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+}
+
+.search button {
+  padding: 10px;
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.weather {
+  text-align: center;
+}
+
+.weather i {
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+.temp {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.details {
+  margin-top: 20px;
+}
+
+.details p {
+  font-size: 1rem;
+}
+
+.forecast {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.day-card {
+  flex: 0 0 auto;
+  background: rgba(255,255,255,0.3);
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 80px;
+}
+
+.day-card p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.dark-mode {
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.dark-mode .container {
+  background: var(--card-dark);
+}
+
+.dark-mode input, .dark-mode .search button {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .day-card {
+  background: rgba(0,0,0,0.3);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #444;
+}
